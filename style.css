@@ -170,6 +170,18 @@ body {
     height: 400px;
 }
 
+.blog p2 {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #453F49;
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+    width: 250px;
+}
+
 
 @media screen and (max-width: 800px) {
     .landing {
