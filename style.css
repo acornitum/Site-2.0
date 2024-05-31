@@ -45,6 +45,7 @@ body {
 
 .landing a {
     color: rgb(198, 133, 133);
+    text-decoration: none;
 }
 
 .projects {
