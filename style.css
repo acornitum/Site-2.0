@@ -1,53 +1,170 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 * {
-    margin: 0px;
-    padding: 00px;
-}
-
-body {
-    background-color: #1e173e;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
     font-family: "Inter", sans-serif;
+    scroll-behavior: smooth;
 }
 
-.landing h2 {
-    font-size: 2rem;
-    color:aqua;
-}
-
-.landing p {
-    font-size: 1rem;
-    margin-top: 20px;
-    color:rgb(215, 234, 250); 
-}
 
 .landing {
-    /* width: 100svw; */
-    margin-top: 150px;
-    margin-bottom: 150px;
-    margin-left: 100px;
-    margin-right: 100px;
-    text-align: left;
-    align-items: left;
-    padding: 10px;
-
-
-    display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 16px;
-	margin-bottom: 16px;
-	max-width: 800px;
+    display: flex;
+    padding: 0 10vw;
+    height: 100vh;
+    background-color: #232323;
+    background-image: linear-gradient(to right, rgb(24,32,39), rgb(58, 47, 84));
 }
 
-.landing a:hover {
-    color: rgb(255, 123, 123);
+
+.landing-left {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.landing a {
-    color: rgb(198, 133, 133);
+.landing-left h1 {
+    position: relative;
+    color: white;
+    font-size: 50px;
+    overflow: hidden;
+    align-items: center; 
+    justify-content: center;
+}
+
+.landing-left p {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+.landing-about {
+    margin-top: 20px;
+    padding-right: 150px;
+}
+
+.name {
+    background-image: linear-gradient(to right, #ED4264, #f8c360);
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.titles {
+    background-image: linear-gradient(to right, rgb(174, 137, 255), rgb(102, 140, 231), rgb(93, 158, 190));
+    background-clip: text;
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+
+.social-links a {
     text-decoration: none;
+    margin-right: 20px;
+    padding-top: 10px;
+}
+
+.social-links a:hover i {
+    color: rgb(245, 126, 126);
+    transition: color 0.2s ease-in-out;
+}
+
+.social-links i {
+    font-size: 24px;
+    color: rgb(148, 206, 241);
+}
+
+.landing-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.landing-img {
+    border-radius: 30px;
+    height: 400px;
 }
 
 .projects {
-    margin-left: 100px;
+    background-color: rgb(24,32,39);
+    color: white;
+    padding: 0 10vw;
+    padding-top: 80px;
 }
+
+.projects-container {
+    display: flex;
+}
+
+.projects h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.projects .title {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.project {
+    margin-right: 100px;
+}
+
+.project img {
+    width: 30vw;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+
+
+@media screen and (max-width: 800px) {
+    .landing {
+        flex-direction: column;
+        padding-top: 100px;
+        padding-bottom: 0;
+    }
+
+    .landing-left {
+        width: 100vw;
+    }
+
+    .landing-left h2 {
+        margin-bottom: 10px;
+    }
+
+    .landing-img {
+        margin-top: 70px;
+        width: 200px;
+        height: 200px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+    }
+
+    .project {
+        margin-right: 0;
+    }
+
+    .project img {
+        width: 80vw;
+        border-radius: 10px;
+        margin-top: 10px;
+    }
+}
+
