@@ -105,7 +105,7 @@ body {
 .blog {
     padding: 0 10vw;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 20px;
     
     background-color:#232323;
     display: flex;
@@ -119,7 +119,7 @@ body {
     /*
     overflow-x: scroll; */
     margin-top: 3vw;
-    margin-bottom: 3vw;
+
 }
 
 .post {
@@ -197,6 +197,25 @@ body {
 }
   
 
+.find-more {
+    width: 250px;
+    border-radius: 10px;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: #453F49;
+    padding: 20px;
+    transition: all .1s ease-in-out; 
+}
+
+.find-more:hover {
+    transform: scale(1.1) rotate(2deg);
+    cursor: pointer;
+}
+
+.footer {
+    margin: 50px;
+}
 
 
 @media screen and (max-width: 800px) {
