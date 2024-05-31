@@ -1,9 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+body {
+    background-color: #232323;
+}
+
 * {
     margin: 0;
     padding: 0;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
     font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
 }
@@ -98,6 +102,7 @@
     height: 400px;
 }
 
+/*
 .projects {
     background-color: rgb(24,32,39);
     color: white;
@@ -128,8 +133,42 @@
     width: 30vw;
     border-radius: 10px;
     margin-top: 10px;
+} */
+
+.blog {
+    padding: 0 10vw;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+    background-color:#232323;
+    display: flex;
+    flex: 1 0 auto;
+
+    /*
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    */
+    overflow-x: scroll;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
 }
 
+.post {
+    position: relative;
+    display: inline-block;
+    margin: 0.5em;
+    cursor: pointer;
+
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+}
+
+.card {
+    width: 250px;
+    height: 400px;
+}
 
 
 @media screen and (max-width: 800px) {
