@@ -102,39 +102,6 @@ body {
     height: 400px;
 }
 
-/*
-.projects {
-    background-color: rgb(24,32,39);
-    color: white;
-    padding: 0 10vw;
-    padding-top: 80px;
-}
-
-.projects-container {
-    display: flex;
-}
-
-.projects h2 {
-    font-size: 30px;
-    margin-bottom: 30px;
-}
-
-.projects .title {
-    font-size: 20px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.project {
-    margin-right: 100px;
-}
-
-.project img {
-    width: 30vw;
-    border-radius: 10px;
-    margin-top: 10px;
-} */
-
 .blog {
     padding: 0 10vw;
     padding-top: 80px;
@@ -165,6 +132,16 @@ body {
     padding: 0;
 }
 
+.hover-rotate {
+    transition: all 0.2s;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+.hover-rotate:hover {
+    transform: scale(1.03) rotate(4deg);
+}
+
 .card {
     width: 315px;
     height: 400px;
@@ -181,6 +158,45 @@ body {
     text-align: center;
     width: 250px;
 }
+
+.blog p6 {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #453F49;
+
+    font-size: 14px;
+    text-align: center;
+    width: 250px;
+}
+
+.read-more {
+    position: absolute;
+    bottom: 10%;
+    left: 30%;
+
+    padding: 8px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 5px;
+
+
+    background-color:rgb(191, 143, 250);
+
+    font-size: 14px;
+    text-align: center;
+    width: 100px;
+
+    cursor: pointer;
+    transition: all .1s ease-in-out; 
+}
+
+.read-more:hover {
+    transform: scale(1.1);
+}
+  
+
 
 
 @media screen and (max-width: 800px) {
